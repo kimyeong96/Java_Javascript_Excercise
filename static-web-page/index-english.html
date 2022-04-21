@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <style>
+    html { overflow: hidden; }
+
+body {
+  overflow: auto;
+  padding:0;
+  margin: 0;
+ }
+
+body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(icon/1.png);
+    background-size: cover;
+    -webkit-filter: blur(1.5px);
+    -moz-filter: blur(1.5px);
+    -o-filter: blur(1.5px);
+    -ms-filter: blur(1.5px);
+    filter: blur(1.5px);
+    transform: scale(1.02);
+    z-index: -1;
+    content: "";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  height: 50%;
+  /* background:linear-gradient(to right,#6d84ad,#99a8c7); */
+  /* background-image: url(icon/1.png);
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  background-blend-mode: multiply;
+}
+
+
+.body {
+  height: 50%;
+  background-color: black;
+}
+
+img {
+  width: 30%;
+  height: 30%;
+}
+
+.navigation {
+  height: 15%;
+}
+
+.header-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+.header-title-contents {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title h1, .header-title p {
+  color: white;
+  margin-top: 8px;
+}
+
+
+.kh-hotel {
+  font-weight: bold;
+}
+
+/* .header-title-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+} */
+
+
+.header-title-btn {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-title-btn:hover {
+  cursor: pointer;
+}
+
+.header-title-btn-left,.header-title-btn-right {
+  height: 90%;
+  width: 120px;
+  margin: 0 1%;
+  transition-duration: 0.8s;
+}
+
+.header-title-btn-left {
+  color: white;
+  background-color: #14192d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title-btn-left:hover {
+  transform: translateY(-7px);
+}
+
+
+.header-title-btn-right {
+  color: white;
+  background-color: #14192d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header-title-btn-right:hover {
+  transform: translateY(-7px);
+}
+
+
+.header-title-background {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title-background img {
+  width: 90%;
+  height: 80%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.navigation > .menu-ul {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+
+.menu-li {
+  margin:0 20px;
+}
+
+.menu-li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-li a:hover {
+  font-weight: bold;
+}
+
+.menu-li img {
+  width: 30px;
+  height: 30px;
+}
+
+.first {
+  margin-right: 45%;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.header-title-background {
+  /* background-color: red; */
+  width: 50%;
+  margin-left: 13%;
+  margin-top: 5px;
+}
+
+
+/* body 시작  */
+.body-contents {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.share {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.body-side {
+  width: 3%;
+  height: 100%;
+  background-color: #ccd4e1;
+}
+
+
+.body-side-contents:hover {
+  transition: 2s;
+  transform: translateX(100%);
+}
+
+[class*=contents-right-puzzle] {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 1s;
+}
+
+[class*=contents-right-puzzle]:hover {
+  transform:scale(1.4);
+  cursor: pointer;
+}
+
+
+.contents-right-puzzle-1 h1{
+  margin: 0;
+}
+
+.contents-right-puzzle-1 p {
+  font-size: 12px;
+  color: #a2a2a2;
+}
+
+.contents-right-puzzle-1, .contents-right-puzzle-5 {
+  width: 400px;
+}
+
+.contents-right-puzzle-5 p{
+  color: #a2a2a2;
+}
+
+
+.contents-right-puzzle-5 p {
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+
+.contents-right-puzzle-5, .contents-right-puzzle-2,.contents-right-puzzle-7,.contents-right-puzzle-4
+,.contents-right-puzzle-10 {
+  background-color: #eff3fc;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="navigation">
+        <ul class="menu-ul">
+          <li class="menu-li first"><div class="logo"><img src="icon/hotel.png" class="kh-hotel"><p>The KH Hotel</p></div></li>
+          <li class="menu-li"><a href="layout/loginBox01-english.html">Sing in</li>
+          <li class="menu-li"><a href="layout/signUpForm-english.html">Sing up</li>
+          <li class="menu-li"><a href="#">Information</li>
+          <li class="menu-li"><a href="https://www.google.co.kr/maps/place/KH%EC%A0%95%EB%B3%B4%EA%B5%90%EC%9C%A1%EC%9B%90/data=!3m1!4b1!4m5!3m4!1s0x357c9ec255555555:0x3565475c3365c5bb!8m2!3d37.498993!4d127.032909?hl=ko" target="_blank">Map</li>
+          <li class="menu-li"><a href="index.html">Korean</a></li>
+        </ul>
+      </div>
+      <div class="header-title">
+        <div class="header-title-contents">
+        <h1>Enjoy Your Dream Vacation In KH Hotel</h1>
+        <p>A Cozy Place For You In KH</p>
+        <div class="header-title-btn">
+          <div class="header-title-btn-left">Book Now</div>
+          <div class="header-title-btn-right">Confirmation</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="share">
+        <div class="body-side">
+          <div class="body-side-contents"></div>
+        </div>
+      <div class="body-contents">
+        <div class="body-contents-1">
+          <div class="contents-right-puzzle-1">
+            <h1>What we are offering</h1>
+            <p>Free facilities and services<br>(Some services may incur additional charges)</p>
+          </div>
+          <div class="contents-right-puzzle-5">
+            <h2>Review</h2>
+            <p>Available on various Social Media</p>
+            <div class="imgs">
+              <img src="icon/brand-facebook.png" style="width: 30px; height: 30px;">
+              <img src="icon/brand-twitter.png" style="width: 30px; height: 30px;">
+              <img src="icon/youtube.png" style="width: 30px; height: 30px;" >
+            </div>
+          </div>
+        </div>
+        <div class="body-contents-2">
+          <div class="contents-right-puzzle-2">
+            <img src="icon/wifi.png">
+            <p>Internet</p>
+          </div>
+          <div class="contents-right-puzzle-6">
+            <img src="icon/furniture.png">
+            <p>Bed</p>
+          </div>
+        </div>
+        <div class="body-contents-3">
+          <div class="contents-right-puzzle-3">
+            <img src="icon/parking.png">
+            <p>Parking</p>
+          </div>
+          <div class="contents-right-puzzle-7">
+            <img src="icon/rounge.png">
+            <p>Pop</p>
+          </div>
+        </div>
+        <div class="body-contents-4">
+          <div class="contents-right-puzzle-4">
+            <img src="icon/workout.png">
+            <p>Gym</p>
+          </div>
+          <div class="contents-right-puzzle-8">
+            <img src="icon/pizza.png">
+            <p>Restaurant </p>
+          </div>
+        </div>
+        <div class="body-contents-5">
+          <div class="contents-right-puzzle-9">
+            <img src="icon/pool.png">
+            <p>Swimming Pool</p>
+          </div>
+          <div class="contents-right-puzzle-10">
+            <img src="icon/coffee.png">
+            <p>Cafe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
