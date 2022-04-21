@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인박스01</title>
+    <style>
+        /*로그인박스 틀*/
+        html { overflow: hidden; }
+
+        body {
+            overflow: auto;
+            padding:0;
+            margin: 0;
+        }
+
+        body::before {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(icon/1.png);
+            background-size: cover;
+            -webkit-filter: blur(1.5px);
+            -moz-filter: blur(1.5px);
+            -o-filter: blur(1.5px);
+            -ms-filter: blur(1.5px);
+            filter: blur(1.5px);
+            transform: scale(1.02);
+            z-index: -1;
+            content: "";
+        }
+
+        .loginBox{
+            width: 300px;
+            padding: 10px;
+            margin: auto;
+            margin-top: 100px;
+            border: 3px solid white;
+            text-align: center;
+        }
+
+        .titleBox h3 {
+            color: #fff;
+        }
+
+        /*사용자 입력*/
+        .inputLogin > input{
+            width: 200px;
+            padding: 5px;
+        }
+        .inputLogin{
+            margin: 10px;
+        }
+        /*버튼*/
+        .btnBox > button{
+            width: 200px;
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+            background-color: #14192d;
+            color: #fff;
+        }
+        /* a 태그*/
+        .linkBox > a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkBox a {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginBox">
+        <div class="titleBox">
+            <h3>로그인</h3>
+        </div>
+        <div class="inputBox">
+            <div class="inputLogin">
+                <input type="text" placeholder="id">
+            </div>
+            <div class="inputLogin">
+                <input type="password" placeholder="pw">
+            </div>
+        </div>
+        <div class="btnBox">
+            <button type="button">로그인</button>
+        </div>
+        <div class="linkBox">
+            <a href="#">아이디 / 비밀번호 찾기</a>
+        </div>
+    </div>
+</body>
+</html>
