@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <!-- navigation -->
+  <div class="row">
+    <div class="col nav-style-color">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="title-box">
+              <i class="bi bi-film"></i>
+              <p>Movie-Info</p>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Log Out</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Movies
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../Movie_card/card-action.html">Action</a></li>
+                  <li><a class="dropdown-item" href="../Movie_card/card-thriller.html">Thriller</a></li>
+                  <li><a class="dropdown-item" href="../Movie_card/card-romance.html">Romance</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Actors
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Keanu Reaves</a></li>
+                  <li><a class="dropdown-item" href="#">Emma Stone</a></li>
+                  <li><a class="dropdown-item" href="#">Andrew Gaflied</a></li>
+                  <li><a class="dropdown-item" href="#">Matt Damon</a></li>
+                  <li><a class="dropdown-item" href="#">Al pachino</a></li>
+                </ul>
+              </li>
+              <div class="d-flex align-items-center right-icon">
+                <li class="text-light icon"><i class="bi bi-search"></i></li>
+              </div>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 존윅 포스터 내용 -->
+  <div class="row">
+    <div class="col-12 poster">
+      <img src="../img/john-wick.png" alt="">
+
+      <!-- 존윅 스토리 설명 -->
+      <div class="row box left-story">
+        <div class="col-12 d-none d-lg-block">
+          <h1>John Wick Reload</h1>
+          <p class="star">★★★★ 2017</p>
+          <p>Starring Keanu Reeves / Ian McShane</p>
+          The story focuses on John Wick (Reeves) searching for the men who broke into his home, stole his vintage car
+          and killed his puppy, which was a last gift to him from his recently deceased wife. Chad Stahelski and David
+          Leitch directed the film together, though only Stahelski was credited.<br><br>
+          <button type="button" class="btn btn-danger"><a href="https://www.youtube.com/watch?v=_jHS5vpnOMM" target="_blank" class="button-text">Watch Now</a></button>
+          <button type="button" class="btn btn-danger"><a href="" class="button-text"></a>More Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 존윅 lg미만 일때의 효과 -->
+  <div class="row d-lg-none under-lg">
+    <class class="col text-light">
+      <h1>John Wick Reload</h1>
+      <p class="star">★★★★ 2017</p>
+      <p>Starring Keanu Reeves / Ian McShane</p>
+      The story focuses on John Wick (Reeves) searching for the men who broke into his home, stole his vintage car and
+      killed his puppy, which was a last gift to him from his recently deceased wife. Chad Stahelski and David Leitch
+      directed the film together, though only Stahelski was credited.<br><br>
+      <button type="button" class="btn btn-danger"><a href="https://www.youtube.com/watch?v=_jHS5vpnOMM" target="_blank" class="button-text">Watch Now</a></button>
+      <button type="button" class="btn btn-danger"><a href="" class="button-text"></a>More Info</button>
+    </class>
+  </div>
+
+
+
+  <!-- 라라랜드 -->
+  <div class="row">
+    <div class="col-12 poster">
+      <img src="../img/lalaland.jpg" alt="">
+
+      <!-- 라라랜드 스토리 설명 -->
+      <div class="row lala-box left-story">
+        <div class="col-12 d-none d-lg-block">
+          <h1>La La Land</h1>
+          <p class="star">★★★★★ 2016</p>
+          <p>Starring Emma Stone / Ryan Gosling</p>
+          While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to
+          reconcile their aspirations for the future. Aspiring actress serves lattes to movie stars in between auditions
+          and jazz musician Sebastian scrapes by playing cocktail-party gigs in dingy bars.
+          <br><br>
+          <button type="button" class="btn btn-danger"><a href="https://www.youtube.com/watch?v=waTDxRZ93Qc" target="_blank" class="button-text">Watch Now</a></button>
+          <button type="button" class="btn btn-danger"><a href="" class="button-text"></a>More Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 라라랜드 lg미만 일때의 효과 -->
+  <div class="row d-lg-none under-lg">
+    <class class="col text-light">
+      <h1>La La Land</h1>
+      <p class="star">★★★★★ 2016</p>
+      <p>Starring Emma Stone / Ryan Gosling</p>
+      While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile
+      their aspirations for the future. Aspiring actress serves lattes to movie stars in between auditions and jazz
+      musician Sebastian scrapes by playing cocktail-party gigs in dingy bars.
+      <br><br>
+      <button type="button" class="btn btn-danger"><a href="https://www.youtube.com/watch?v=waTDxRZ93Qc" target="_blank" class="button-text">Watch Now</a></button>
+      <button type="button" class="btn btn-danger"><a href="" class="button-text"></a>More Info</button>
+    </class>
+  </div>
+
+
+  <!-- 스파이더맨 -->
+
+  <div class="row">
+    <div class="col-12 poster">
+      <img src="../img/spider.jpg" alt="">
+
+      <!--  스파이더맨 스토리 설명 -->
+      <div class="row box left-story">
+        <div class="col-12 d-none d-lg-block">
+          <h1>The Amazing Spider-Man2</h1>
+          <p class="star">★★★ 2014</p>
+          <p>Starring Emma Stone / Andrew Garfield</p>
+          While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to
+          reconcile their aspirations for the future. Aspiring actress serves lattes to movie stars in between auditions
+          and jazz musician Sebastian scrapes by playing cocktail-party gigs in dingy bars.
+          <br><br>
+          <button type="button" class="btn btn-danger"><a href="https://www.youtube.com/watch?v=WfV-0Yv5vNY" target="_blank" class="button-text">Watch Now</a></button>
+          <button type="button" class="btn btn-danger"><a href="" class="button-text"></a>More Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 스파이더맨 lg미만 일때의 효과 -->
+  <div class="row d-lg-none under-lg">
+    <class class="col text-light">
+      <h1>The Amazing Spider-Man2</h1>
+      <p class="star">★★★ 2014</p>
+      <p>Starring Emma Stone / Andrew Garfield</p>
+      While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile
+      their aspirations for the future. Aspiring actress serves lattes to movie stars in between auditions and jazz
+      musician Sebastian scrapes by playing cocktail-party gigs in dingy bars.
+      <br><br>
+      <button type="button" class="btn btn-danger"><a href="https://www.youtube.com/watch?v=WfV-0Yv5vNY" target="_blank" class="button-text">Watch Now</a></button>
+      <button type="button" class="btn btn-danger"><a href="" class="button-text"></a>More Info</button>
+    </class>
+  </div>
+
+  <!-- footer -->
+
+
+
+</body>
+
+</html>

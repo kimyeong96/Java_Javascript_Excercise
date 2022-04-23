@@ -1,0 +1,166 @@
+/* title 사진과 Navbar 조정 */
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.nav-style-color {
+  background-color: black;
+}
+
+.row img {
+  width: 100vw;
+  height: 100%;
+}
+
+.title-box img {
+  width: 30px;
+  height: 30px;
+}
+
+/* 존윅 */
+
+.poster {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  color: red;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  background-size: 100% 100%;
+  height: 50%;
+  width: 30%;
+  color: white;
+}
+
+.box2 {
+  color: white;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  background-size: 100% 100%;
+  height: 50%;
+  width: 30%;
+  color: white;
+}
+
+.left-story {
+  transition: all 1s ease;
+}
+
+.left-story:hover {
+  transform: scale(1.2);
+}
+
+.right-story {
+  transition: all 1s ease;
+}
+
+.right-story:hover {
+  transform: scale(1.2);
+}
+
+/* lg 미만일 때 */
+.under-lg {
+  background-color: black;
+  margin: 0;
+  padding: 10px;
+}
+
+
+/* 라라랜드 */
+.poster {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lala-box {
+  color: red;
+  position: absolute;
+  top: 30%;
+  right: 13%;
+  background-size: 100% 100%;
+  height: 50%;
+  width: 30%;
+  color: white;
+}
+
+.lala-box2 {
+  color: white;
+  position: absolute;
+  top: 8%;
+  right: 15%;
+  background-size: 100% 100%;
+  height: 50%;
+  width: 30%;
+  color: white;
+}
+
+.left-story {
+  transition: all 2s ease;
+}
+
+.left-story:hover {
+  transform: scale(1.2);
+}
+
+.right-story {
+  transition: all 1s ease;
+}
+
+.right-story:hover {
+  transform: scale(1.2);
+}
+
+/* lg 미만일 때 */
+.under-lg {
+  background-color: black;
+  margin: 0;
+  padding: 10px;
+}
+
+.button-text {
+  text-decoration: none;
+  color: white;
+}
+
+.button-text:hover {
+  color: white;
+}
+
+.footer-contents p {
+  color: white;
+}
+
+
+.title-box p {
+  margin-bottom: 0;
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.title-box > i{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
