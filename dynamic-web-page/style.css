@@ -158,9 +158,32 @@ body {
   margin-left: 20px;
 }
 
-.title-box > i{
+.title-box>i {
   width: 30px;
   height: 30px;
   margin-right: 20px;
 }
 
+.login-text {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.star {
+  color: #fac539;
+  display: inline;
+}
+
+.news {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link {
+  padding-top: 0;
+}
+
+.modal-body {
+  padding-top: 4px;
+}
